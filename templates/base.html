@@ -30,7 +30,11 @@
 
                             <div class="dropdown-divider"></div>
 
-                            <a href="{% url 'logout' %}" class="dropdown-item">Log out</a>
+                            <form action="{% url 'logout' %}" method="post">
+                                {% csrf_token %}
+                                <input type="submit" value="Log Out">
+                            </form>
+                            
 
                         </div>
                     </li>
