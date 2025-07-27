@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     'users',
     'pages',
     'articles',
+
+    'crispy_forms',
+    'crispy_bootstrap5',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -129,3 +133,8 @@ LOGIN_REDIRECT_URL  = 'home'
 LOGOUT_REDIRECT_URL  = 'home'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+TIME_ZONE = 'Asia/Kolkata'
